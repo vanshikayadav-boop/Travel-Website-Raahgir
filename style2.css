@@ -1,0 +1,251 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f9fafb;
+  margin: 0;
+  padding:0;
+}
+
+h1 {
+  text-align: center;
+  color: #b7c7e5;
+  margin-bottom:130px;
+  font-size:80px;
+  font-weight:bolder;
+  font-style: normal;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  letter-spacing: 5px;
+  margin:20px 0px 50px 0px;
+  z-index:1;
+  font-size:100px;
+}
+
+.swiper {
+  width: 100%;
+  height: 400px;
+  margin: 0px 0px 0px 0px;
+  padding:0px 10px 50px 20px;
+}
+
+.swiper-slide {
+  background-color:transparent;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin-bottom:50px;
+  height:400px;
+  position: relative;
+  display: inline-block;
+}
+
+.swiper-scrollbar {
+  background:transparent;
+  height: 6px;
+  border-radius: 3px;
+}
+
+.swiper-scrollbar-drag {
+  background: transparent;
+}
+.swiper1{
+    position: relative;
+    background-image:url("pexels-cloudBcakgrund.jpg");
+    background-size:cover;
+    background-repeat:no repeat;
+   opacity: 10px;
+   height:650px;
+    justify-content: center;
+  align-items: center;
+  text-align: center;
+    
+}
+/* Blur overlay */
+.swiper1::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: inherit;
+  filter: blur(8px);
+  transform: scale(1.05); /* prevent edge blur cut-off */
+  z-index: 0;
+}
+
+.swiper1 * {
+  position: relative;
+  z-index: 1; /* keep text above the blur */
+}
+.swiper-slide img {
+  width: 100%;
+  height:100%;
+  object-fit: cover; /* crops nicely */
+  border-radius: 10%;
+  position: relative;
+  display: inline-block;
+
+}
+.head2{
+ text-align: center;
+ color: #f1dada;
+ margin-top:50px;
+
+  font-size:65px;
+  font-weight:bold;
+  font-style: normal;
+  margin-bottom:70px;
+  font-family:Arial, Helvetica, sans-serif;
+  letter-spacing:2px;
+margin-top:70px;
+}
+.swiper2{
+  background-image:url("brown-concrete-wall-with-scratches-vector_53876-143109.avif") ;
+  background-size: cover;
+ 
+  height:650px;
+  
+}
+.s2 img{
+  border-radius:80%;
+}
+.swiper3{
+  background:rgb(253, 253, 127);
+     background:linear-gradient(to bottom,#f8a48a,#ff9800,rgb(243, 243, 125),rgb(248, 248, 188));
+  height:650px;
+}
+.head3{
+  text-align: center;
+  color: #ece1e1;
+  margin-top:50px;
+  margin-bottom:20px;
+  font-size:65px;
+  font-weight:bolder;
+  font-style:initial;
+  margin-bottom:70px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing:0px;
+  
+
+}
+.swiper0{
+  background-image:url("worldMap.jpg");
+  background-size:cover;
+  background-repeat:no-repeat;
+  height:650px;
+  padding:0;
+  margin:0;
+  position:relative;
+  
+  
+}
+.s0 img{
+
+
+border-radius:10%;
+
+}
+
+.head0{
+  margin:20px 0px 30px 0px;
+  z-index:1;
+  font-size:130px;
+ 
+}
+.text {
+  position: absolute;
+  bottom: 10px;            /* distance from bottom */
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;            /* text color */
+  font-size: 23px;         /* adjust as needed */
+  font-weight: bold;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.4); /* optional background for visibility */
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-style: normal;
+}
+
+.t1{
+  color:rgb(244, 244, 244);
+  text-align:left;
+  font-size:30px;
+   position: absolute;
+  bottom: 10px;            /* distance from bottom */
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;            /* text color */
+  font-weight: bold;
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-style: normal;
+}
+/* .final-slide1 {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(to bottom right, #ff9966, #ff5e62);
+  color: white;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  animation: fadeIn 1.5s ease-in-out;
+  padding: 40px;
+  font-style: normal;
+}
+
+.final-slide1 h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.final-slide p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.social-icons a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  background-color: white;
+  color: #ff5e62;
+}
+
+/* ✨ Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+} */
+/* .final-slide1{
+    background-image:url("travel-destination-view-from-airplane-window_731790-81692.avif");
+    background-size:cover;
+    background-repeat:no-repeat;
+} */
+
+
+
+
+
+

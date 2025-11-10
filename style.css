@@ -1,0 +1,157 @@
+*{
+    border:0;
+    padding:0;
+    
+    margin:0;
+   
+    box-sizing: border-box;
+    font-family:Poppins;
+    
+}
+body{
+    border:none;
+    margin:none;
+    padding:0;
+    position:relative;
+     background-color:rgb(251, 244, 245);
+}
+.navbar{
+    position:fixed;
+    z-index:10;
+  /* background:linear-gradient(90deg,#ff5722,#ff9800);  */
+     background-color: rgba(225,225,225,0.15);
+    backdrop-filter:blur(10px); 
+    /* background:rgb(18, 18, 18); */
+    color:white;
+    width:100%;
+    height:80px;
+    padding :7px 7px 7px 7px;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+   
+    
+}
+.title{
+     background:linear-gradient(90deg,#ff5722,#ff9800,yellow);
+     -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent ;
+    font-family:'K2D';
+    font-weight:bold;
+    font-size:50px;
+    
+    
+}
+.Trip-Plan{
+padding:5px 5px 5px 5px;
+display:flex;
+align-items:center;
+justify-content:space-around;
+text-decoration:none;
+font-size:30px;
+color:red;
+}
+.Trip-plan div{
+    margin-left:15px;
+
+}
+.Trip-Plan a{
+    text-decoration:none;
+    color:rgb(238, 230, 230);
+    font-size:25px;
+    
+}
+.navbar a:hover{
+
+color:red;
+  
+}
+.navbar:hover{
+    background:rgb(23, 23, 23);
+}
+
+.icon{
+    padding:18px 7px 7px 7px;
+   
+}
+.icon i:hover{
+    color:red;
+}
+.icon i{
+    margin-left:5px;
+    font-size:larger
+}
+.Raahgir{
+    position:relative;
+    width:100%;
+    height:100vh;
+    overflow:hidden;
+}
+
+.swiper-slide{
+    height:100vh;
+    width:100vw;
+   overflow:hidden;
+   background-color:transparent;
+   object-fit: cover;
+
+}
+.swiper-slide video{
+    height:100vh;
+    width:100vw;
+    overflow:hidden;
+    object-fit:cover;
+}
+.swiper-fade .swiper-slide{
+    
+    transition:opacity 0.8s ease-in-out;
+}
+.vol-btn{
+ padding:3px 3px 3px 3px;
+   position:absolute;
+   top:94%;
+   left:94%;
+   height:30px;
+   width:30px;
+   z-index:10;
+   font-size:18px;
+   cursor:pointer;
+   border-radius:50%;
+   border:none;
+   color:white;
+   background:rgba(0,0,0,0.5);
+   text-align: center;
+} 
+.play{
+    position:absolute;
+    height:100px;
+    width:100px;
+    z-index:10;
+    font-size:50px;
+    cursor:pointer;
+    border-radius:50%;
+    border:none;
+    color:white;
+    background:rgba(0,0,0,0.5);
+    top:50%;
+    left:50%;
+}
+    
+.mySwiper{
+   background-color:black;
+   width:100%;
+   height:300px;
+   display:flex;
+   justify-content:center;
+   align-content:center;
+}
+.swiper-slides{
+      text-align: center;
+      font-size: 18px;
+      background: #444;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width:100%;
+      height:200px;
+}

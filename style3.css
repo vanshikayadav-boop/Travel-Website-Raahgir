@@ -1,0 +1,122 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:Poppins;
+    border:0;
+}
+body{
+    background-image:url("finalCollage.png");
+    background-size:cover;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+   
+    overflow:hidden;
+}
+.overlay{
+    height:100%;
+    width:100%;
+    background-color: rgba(0, 0, 0, 0.751) ;
+    position:absolute;
+    z-index:1;
+}
+.container{
+        margin-top:80px;
+        text-align:center;
+        animation:fadeIn 2s ease;
+
+        z-index:2;
+}
+.brand{
+    font-size: 100px;
+    font-weight:700;
+    font-family:K2D;
+    background:linear-gradient(to right,rgb(236, 50, 50),rgb(255, 119, 0),rgb(214, 202, 33),rgb(223, 223, 146));
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent ;
+    }
+.tagline{
+    font-size:55px;
+    font-weight:400;
+    font-family:katibeh;
+     background:linear-gradient(to right,rgb(147, 211, 122),rgb(202, 213, 140),rgb(227, 232, 207));
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent ;
+}
+.signin-form{
+margin:40px auto 20px;
+width:500px;
+background-color: rgba(225,225,225,0.15);
+backdrop-filter: blur(5px);
+padding:20px 40px 20px 40px;
+border-radius:8px;
+}
+.signin-form h2{
+    color:rgb(239, 216, 216);
+    margin-bottom:10px;
+    font-weight: lighter;
+}
+.signin-form input{
+    padding:10px 10px 10px 10px;
+    width:100%;
+    color:rgb(0, 0, 0);
+    font-size: larger;
+    border-radius:8px;
+    margin-bottom:12px;
+}
+.signin-form button{
+   padding:10px 10px 10px 10px;
+    width:100%;
+    background-color: rgb(232, 170, 26);
+    color:white;
+    font-size: 25px;
+    border-radius:8px;
+    margin-bottom:12px; 
+    text-align:center;
+    cursor:pointer;
+    transition:0.5s;
+}
+.signin-form button:hover{
+    background-color:rgb(237, 95, 24);
+}
+.links{
+    font-size: 20px;
+    color:white;
+}
+.links a{
+    color:rgb(230, 143, 29);
+    text-decoration:none;
+    border:none;
+}
+.explore{
+    display:inline-block;
+    border-radius:25px;
+    background-color: rgb(230, 177, 54);
+    color:black;
+    font-size:20px;
+    text-decoration:none;
+    border:none;
+    padding:10px 10px 10px 10px;
+    transition:0.3s;
+
+}
+.explore:hover{
+     background-color:rgb(237, 95, 24);
+}
+@keyframes fadeIn{
+    from{opacity:0;transform:translateY(20px)}
+    to{opacity:1;transform:translateY(0px)}
+
+}
+@media(max-width:600px)
+{
+    .brand{font-size:35px;}
+    .tagline{font-size:18px}
+    .signin-form{max-width:280px}
+
+}
+.finalSign{
+    color:white;
+    text-decoration: none;
+}
